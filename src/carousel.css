@@ -1,0 +1,57 @@
+.carousel {
+  width: 25rem;
+  padding: 1rem;
+
+  background-color: black;
+
+  display: grid;
+  grid-template-rows: 1fr 2rem;
+  grid-template-columns: 1fr 250px 1fr;
+}
+
+.carousel-container {
+  display: grid;
+  place-items: center;
+  place-self: center;
+  grid-area: 1 / 2 / 2 / 3;
+
+  overflow: hidden;
+}
+
+.carousel-images {
+  height: 150px;
+  width: 250px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+
+  /* to move images, set to -0px, -250px, -500px, -750px, -1000px */
+  transform: translateX(-0px);
+}
+
+.slide-buttons {
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  grid-area: 2 / 2 / 3 / 3;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.slide-button {
+  cursor: pointer;
+}
+
+.left-button,
+.right-button {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+
+  place-self: center;
+}

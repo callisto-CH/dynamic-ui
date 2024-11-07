@@ -1,5 +1,6 @@
-import './page.css';
-import './dropdown.css';
+import "./page.css";
+import "./dropdown.css";
+import "./carousel.css";
 import { createDropdown } from "./dropdown.js";
 
 let button = document.querySelector(".dropdown-button");
