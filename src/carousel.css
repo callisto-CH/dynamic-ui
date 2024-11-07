@@ -55,3 +55,12 @@
 
   place-self: center;
 }
+
+.left-button,
+.right-button,
+.slide-button,
+img {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
